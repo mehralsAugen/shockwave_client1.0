@@ -1,0 +1,369 @@
+QCheckBox[name = 'cb_login'] {color: silver;font-size: 12px;}
+
+QCheckBox[name = 'cb_login']:checked {color: gray;}
+
+QCheckBox[name = 'cb_login']::indicator:unchecked {
+    width: 12px;
+    height: 12px;
+    border: 1px solid silver;
+    color: skyblue;
+}
+
+QCheckBox[name = 'cb_login']::indicator:unchecked:hover {
+    width: 12px;
+    height: 12px;
+    border: 1px solid lightblue;
+}
+
+QCheckBox[name = 'cb_login']::indicator:checked {border: 1px solid lightblue;background: dodgerblue;}
+
+QCheckBox[name = 'cb_login']::indicator:checked:hover {border: 1px solid lightblue;background: skyblue;}
+
+QLabel[name = 'l_bg_gray']{background: rgba(176, 224, 230, 0.2);border:0 solid;}
+QLabel[name = 'l_bg_gray_alpha_6']{background: rgba(176, 224, 230, 0.6);border:0 solid;}
+QLabel[name = 'l_bg_white']{background:white;border:0 solid;}
+QLabel[name = 'l_bg_white_alpha_6']{background:rgba(255,255,255,0.6);border:0 solid;}
+QLabel[name = 'l_bg_white_alpha_6_radius']{background:rgba(255,255,255,0.6);border:1px rgba(255,255,255,0.6) solid;border-radius: 5px;border-top-right-radius: 0;}
+QLabel[name = 'l_bg_white_alpha_2']{background:rgba(255,255,255,0.2);border:0 solid;}
+QLabel[name = 'l_bg_gradient']{
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                    stop:0 lightskyblue,
+                    stop:0.2 skyblue,
+                    stop:0.5 lightskyblue,
+                    stop:1 dodgerblue);
+    color:azure;
+}
+QLabel[name = 'l_bg_transparent']{background:transparent;font-weight:bold;font-size:18px;}
+
+QLabel[name = 'l_display'] {
+    border: 0 solid;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+QLabel[name = 'l_link'] {
+    border: 0 solid red;
+    background: transparent;
+    font-size:12px;
+}
+
+QLabel[name = 'l_scroll'] {
+    background: rgba(250,128,114,0.5);
+    border-radius: 5px;
+    border: 0 solid;
+    border-bottom:1px solid darkblue;
+}
+
+QLabel[name = 'l_profile'] {border-radius:30px;background:rgba(255,255,255,0.8);}
+
+QLabel[name = 'l_signature'] {
+    background:transparent;
+    font-size:12px;
+    border:0 solid;
+}
+
+QLabel[name = 'l_title'] {
+    border:1px solid dodgerblue;
+    border-top-left-radius:5px;
+    background:dodgerblue;
+}
+
+QLabel[name = 'l_emphasis'] {
+    border:0 solid;
+    background:transparent;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+QLineEdit[name = 'le_search'] {
+    background: rgba(255, 255, 255, 0.3);
+    border: 0 solid;
+    color: silver;
+    font-family: arial, fantasy;
+}
+
+QLineEdit[name = 'le_search_focus_in'] {
+    background: rgba(255,240,245,0.8);
+    border: 0 solid;
+    border-bottom: 1px solid silver;
+    color: black;
+}
+
+QLineEdit[name = 'le_input'] {
+    background: transparent;
+    border: 0 solid;
+    border-bottom: 1px solid silver;
+    font-weight:bold;
+    font-family: arial, serif;
+    font-size:18px;
+    color:silver;
+}
+
+QLineEdit[name = 'le_input']:hover {
+    background: transparent;
+    border: 0 solid;
+    border-bottom: 2px solid silver;
+    font-weight:bold;
+    font-family: arial, serif;
+    font-size:18px;
+}
+
+QLineEdit[name = 'le_input_fin'] {
+    background: transparent;
+    border: 0 solid;
+    border-bottom: 1px solid skyblue;
+    font-weight:bold;
+    font-family: arial, serif;
+    font-size:18px;
+}
+
+QListWidget[name = 'lw_chat'] {
+    background: rgba(176,224,230,0.2);
+    font-size:18px;
+    outline:0;
+}
+
+QListWidget[name = 'lw_chat']::Item {background:transparent;color:black;}
+
+QListWidget[name = 'lw_transparent'] {background:transparent;}
+
+QListWidget[name = 'lw_login_record'] {
+    background: rgba(176,224,230,0.8);
+    font-size: 18px;
+    outline: 0}
+
+QListWidget[name = 'lw_login_record']::Item {color:mediumvioletred;}
+
+QMenu[name = 'systraymenu'] {background: rgba(245,245,245,0.7);border: 0 solid;}
+
+QMenu[name = 'systraymenu']::Item {padding: 8px 20px;color: darksalmon;}
+
+QMenu[name = 'systraymenu']::Item:selected {
+    background: rgba(173,216,230,0.7);
+    color: palevioletred;
+    font-weight: bold;
+    font-size:16px;
+}
+
+QMenu[name = 'systraymenu']::separator {
+    height:1px;
+    background:pink;
+    margin-left:10px;
+    margin-right:10px;
+}
+
+QProgressBar {
+    border:1px solid #FFFFFF;
+    background:cornsilk;
+    text-align:center;
+    color:violet;
+    border-radius:10px;
+}
+
+QProgressBar::chunk {
+    border-radius:5px;
+    border:1px solid black;
+    background-color:skyblue;
+    width:8px;
+    margin:0.5px;
+}
+
+QPushButton[name = 'btn_transparent'] {background:transparent;border: 0 solid;}
+
+QPushButton[name = 'btn_confirm'] {background: dodgerblue;
+    border: 0 solid;
+    border-radius: 10px;
+    color: azure;
+}
+
+QPushButton[name = 'btn_confirm']:hover {background: rgb(40,184,225);}
+
+QPushButton[name = 'btn_quit'] {
+    background:transparent;
+    border: 1px solid silver;
+    border-radius: 4px;
+}
+
+QPushButton[name = 'btn_quit']:hover {background: rgb(245, 245, 245);}
+
+QPushButton[name = 'btn_mediumvioletred'] {background:mediumvioletred;border: 0 solid;}
+
+QPushButton[name = 'btn_orange'] {background:orangered;border: 0 solid;}
+
+QPushButton[name = 'btn_login'] {
+    background-color:
+    qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                    stop:0 rgb(30,175,230),
+                    stop:0.2 rgb(30,175,235),
+                    stop:0.6 rgb(30,175,240),
+                    stop:1 rgb(30,175,255));
+    color:azure;
+    font-weight:bold;
+    border-radius: 4px;
+}
+
+QPushButton[name = 'btn_search'] {
+    background: rgba(255, 255, 255, 0.3);
+    border: 0 solid;
+    color:silver;
+}
+
+QPushButton[name = 'btn_search_focus_in'] {
+    background: rgba(255,240,245,0.8);
+    border: 0 solid;
+    border-bottom: 1px solid silver;
+    color:black;
+}
+
+QPushButton[name = 'btn_tabs'] {
+    background: transparent;
+    border: 0 solid;
+    color:DarkSlateBlue;
+    font-size: 15px;
+}
+
+QPushButton[name = 'btn_tabs']:hover {
+    color:lightblue;
+    font-size: 16px;
+    font-weight:bold;
+}
+
+QPushButton[name = 'btn_tabs']:checked {
+    color:dodgerblue;
+    font-size: 15px;
+    font-weight:bold;
+}
+
+QPushButton[name = 'btn_upper'] {background: transparent;border: 0 solid;}
+
+QPushButton[name = 'btn_upper']:hover {background:rgba(255,192,203,0.7);border: 0 solid;}
+
+QPushButton[name = 'btn_downer'] {border: 0 solid;background: transparent;}
+
+QPushButton[name = 'btn_downer']:hover {background: rgba(255,192,203,0.7);}
+
+QPushButton[name = 'btn_cancel'] {
+    color:dodgerblue;
+    background: rgba(255,255,255,0.3);
+    border-radius:10px;
+}
+
+QPushButton[name = 'btn_cancel']:hover {background: rgba(255,255,255,0.5);}
+
+QPushButton[name = 'PS_btn_border']{
+    border: 3px solid skyblue;
+    color: lightcoral;
+    font-size: 16px;
+}
+
+QPushButton[name = 'PS_btn_border']:hover {
+    border:3px solid dodgerblue;
+    color: coral;
+}
+
+QScrollBar[name = 'sb_SO_lw']:vertical {
+    width:8px;
+    background:rgba(0,0,0,0);
+    margin:0;
+    padding-top:9px;
+    padding-bottom:9px;
+}
+
+QScrollBar[name = 'sb_SO_lw']::handle:vertical {
+    width:8px;
+    background:rgba(0,0,0,0.25);
+    border-radius:4px;
+    min-height:20px;
+}
+
+QScrollBar[name = 'sb_SO_lw']::handle:vertical:hover {
+    width:8px;
+    background:rgba(0,0,0,0.5);
+    border-radius:4px;
+    min-height:20px;
+}
+
+QScrollBar[name = 'sb_SO_lw']::add-line:vertical {
+    height:9px;width:8px;
+    /*border-image:url(:/images/a/3.png);*/
+    subcontrol-position:bottom;
+}
+
+QScrollBar[name = 'sb_SO_lw']::sub-line:vertical {
+    height:9px;width:8px;
+    /*border-image:url(:/images/a/1.png);*/
+    subcontrol-position:top;
+}
+
+QScrollBar[name = 'sb_SO_lw']::add-line:vertical:hover {
+    height:9px;width:8px;
+    /*border-image:url(:/images/a/4.png);*/
+    subcontrol-position:bottom;
+}
+
+QScrollBar[name = 'sb_SO_lw']::sub-line:vertical:hover {
+    height:9px;width:8px;
+    /*border-image:url(:/images/a/2.png);*/
+    subcontrol-position:top;
+}
+
+QScrollBar[name = 'sb_SO_lw']::add-page:vertical,QScrollBar::sub-page:vertical {
+    background:rgba(0,0,0,0.1);
+    border-radius:4px;
+}
+
+QSlider[name = 'sl']::groove:horizontal {
+    border: 1px solid #4A708B;
+    background: #C0C0C0;
+    height: 5px;
+    border-radius: 1px;
+    padding-left:-1px;
+    padding-right:-1px;
+}
+
+QSlider[name = 'sl']::sub-page:horizontal {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #B1B1B1, stop:1 #c4c4c4);
+    background: qlineargradient(x1: 0, y1: 0.2, x2: 1, y2: 1, stop: 0 #5DCCFF, stop: 1 #1874CD);
+    border: 1px solid #4A708B;
+    height: 10px;
+    border-radius: 2px;
+}
+
+QSlider[name = 'sl']::add-page:horizontal {
+    background: #575757;
+    border: 0px solid #777;
+    height: 10px;
+    border-radius: 2px;
+}
+
+QSlider[name = 'sl']::handle:horizontal {
+    background: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5,
+    stop:0.6 #45ADED, stop:0.778409 rgba(255, 255, 255, 255));
+
+    width: 11px;
+    margin-top: -3px;
+    margin-bottom: -3px;
+    border-radius: 5px;
+}
+
+QSlider[name = 'sl']::handle:horizontal:hover {
+    background: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0.6 #2A8BDA, stop:0.778409 rgba(255, 255, 255, 255));
+    width: 11px;
+    margin-top: -3px;
+    margin-bottom: -3px;
+    border-radius: 5px;
+}
+
+QSlider[name = 'sl']::sub-page:horizontal:disabled {background: #00009C;border-color: #999;}
+
+QSlider[name = 'sl']::add-page:horizontal:disabled {background: #eee;border-color: #999;}
+
+QSlider[name = 'sl']::handle:horizontal:disabled {
+    background: #eee;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+
+QTextEdit[name = 'te_send'] {border: 0 solid;background: white;}
